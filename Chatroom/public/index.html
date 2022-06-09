@@ -10,26 +10,41 @@
 <body>
     
     <div class="app">
-        <div class="screen join-screen active">
+        <div class="screen join-screen">
             <div class="form">
                 <h2>Join Chatroom:</h2>
                 <div class="form-input">
                     <label>User name:</label>
                     <input type="text" id="username">
                 </div>
-                <div class="form-imput">
+                <div class="form-input">
                     <button id="join-user">Join</button>
                 </div>
             </div>
         </div>
 
-        <div class="screen chat-screen">
+        <div class="screen chat-screen active">
             <div class="header">
                 <div class="logo">Chatroom</div>
                 <button id="exit-chat">Exit</button>
             </div>
             <div class="messages">
-                <div class="messege"></div>
+                <!-- Dummy messages -->
+                <div class="message my-message">
+                    <div class="name">You</div>
+                    <div class="text">Hi</div>
+                </div>
+                <div class="update">
+                    Abs is joined the conversation
+                </div>
+                <div class="message other-message">
+                    <div class="name">Abc</div>
+                    <div class="text">Hi</div>
+                </div>
+            </div>
+            <div class="typebox">
+                <input type="text" id="message-input">
+                <button id="send-message">Send</button>
             </div>
         </div>
     </div>
