@@ -19,4 +19,29 @@
 
     });
 
+    app.querySelector(".chat-screen #send-message").addEventListener("click", function{
+
+        let message = app.querySelector(".chat-screen #message-imput").value;
+        if(message.length == 0){
+            return;
+        }
+        renderMessage("my", {
+            username:uname,
+            text:message
+        });
+
+        socket.emit("chat", {
+            username:uname,
+            text:message
+        });
+
+        app.querySelector(".chat-screen #message-imput").value = "";
+
+        function renderMessage(type, message){
+            let messageConteiner = app.querySelector(".chat-screen .messages");
+            if
+        }
+
+    });
+
 })();
