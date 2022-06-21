@@ -9,16 +9,18 @@ const SOCKET_ENDPOINT = 'localhost:3000';
 })
 export class ChatboxComponent implements OnInit {
   socket: any;
+  message!: string;
   constructor() { }
 
   ngOnInit(): void {
     this.setupSocketConection();
   }
-  setupSocketConection(){
+  setupSocketConection(){ // rec via another
     this.socket = io(SOCKET_ENDPOINT);
   }
-  sendMsg(){
+  sendMsg(){ // send message from User
     this.socket.emit('message', this.message);
     this.message = '';
+   
   }
 }
