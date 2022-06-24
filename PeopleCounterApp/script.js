@@ -1,13 +1,14 @@
-// document.getElementById('count-el').innerText = 5;
+let count = 0;
+let countEl = document.getElementById('count-el');
+let saveEl = document.getElementById('save-el');
 
-let myFunction = function(myDogAge){
-    myDogAge += 1;
+function increment(){
+    count += 1;
+    countEl.textContent = count;
 }
 
-let myDogAge = document.addEventListener('click', myFunction);
- 
-console.log(myFunction(1));
-
- document.getElementById('count-el').innerText = 2;
-
- 
+function save(){
+    saveEl.textContent += count + " - ";
+    count = 0;
+    countEl.textContent  = 0;    
+}
