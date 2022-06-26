@@ -1,0 +1,39 @@
+body {
+    background-color: #016f32;
+    text-align: center;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+    font-weight: bold;
+    
+}
+
+h1{
+    color: goldenrod;
+    
+}
+
+#message-el{
+    font-style: italic;
+}
+
+button{
+    color: #016f32;
+    width: 150px;
+    background: goldenrod;
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 4px;
+    text-align: center;     
+}
+
+button:hover{
+    color: white;
+    background: rgb(137, 110, 42);
+}
+
+.btn-group{
+    justify-content: center;
+}
