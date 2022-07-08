@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    min-width: 400px;
 }
 
 input{
@@ -28,4 +29,18 @@ button:hover{
     background-color: #fafff0;
     color: #46732e;
     cursor: pointer;
+}
+
+
+ul{
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    margin-top: 5px;
+}
+a{
+    color: #46732e;
 }
